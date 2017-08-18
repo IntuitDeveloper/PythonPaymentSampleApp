@@ -21,8 +21,7 @@ It is also expected that your development environment is properly set up for Pyt
 
 Clone the repository:
 ```
-git clone https://github.intuit.com/IntuitDeveloper/OAuth2PythonSampleApp.git
-***TODO validate URL***
+git clone https://github.com/IntuitDeveloper/OAuth2PythonPaymentSampleApp.git
 ```
 
 Install Python 3.5:
