@@ -42,13 +42,13 @@ http://docs.python-requests.org/en/master/
 
 OR use requirements.txt file:
 ```
-cd OAuth2PythonSampleApp/
+cd OAuth2PythonPaymentSampleApp/
 pip install -r requirements.txt 
 ```
 
 Launch your app:
 ```
-cd OAuth2PythonSampleApp/
+cd OAuth2PythonPaymentSampleApp/
 python manage.py runserver
 ```
 
