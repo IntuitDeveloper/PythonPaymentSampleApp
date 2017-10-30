@@ -112,6 +112,9 @@ def createCharge(access_token):
     print(json_obj)
     r = requests.post(settings.SANDBOX_PAYMENT_BASEURL + route, headers=headers, json=json_obj)
     status_code = r.status_code
+    if status_code != 201:
+        response = ''
+        return response, status_code
     response = json.loads(r.text)
     return response, status_code
 
