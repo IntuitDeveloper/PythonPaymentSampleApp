@@ -82,23 +82,27 @@ def createCharge(access_token):
                 'Content-Type': 'application/json',
                 'Request-Id': str(uuid.uuid4()) }
     payload =   {
-                  "amount": "10.55",
-                  "capture": False,
-                  "card": {
-                    "expYear": "2020",
-                    "expMonth": "02",
-                    "address": {
-                      "region": "CA",
-                      "postalCode": "94086",
-                      "streetAddress": "1130 Kifer Rd",
-                      "country": "US",
-                      "city": "Sunnyvale"
+                    "amount": "10.55",
+                    "capture": False,
+                    "card": {
+                        "expYear": "2020",
+                        "expMonth": "02",
+                        "address": {
+                            "region": "CA",
+                            "postalCode": "94086",
+                            "streetAddress": "1130 Kifer Rd",
+                            "country": "US",
+                            "city": "Sunnyvale"
+                        },
+                        "name": "emulate=0",
+                        "cvc": "123",
+                        "number": "4111111111111111"
                     },
-                    "name": "emulate=0",
-                    "cvc": "123",
-                    "number": "4111111111111111"
-                  },
-                  "currency": "USD"
+                    "context": {
+                        "mobile": False,
+                        "isEcommerce": True
+                    },
+                    "currency": "USD"
                 }
     json_str = json.dumps(payload)
     json_obj = json.loads(json_str)
