@@ -86,6 +86,7 @@ def getUserProfile(access_token):
 def createCharge(access_token):
     route = '/quickbooks/v4/payments/charges'
     auth_header = 'Bearer ' + access_token
+
     headers = {'Authorization': auth_header, 'Accept': 'application/json', 'Content-Type': 'application/json',
                'Request-Id': str(uuid.uuid4())}
     payload = {
@@ -105,8 +106,13 @@ def createCharge(access_token):
             "cvc": "123",
             "number": "4111111111111111"
         },
+        "context": {
+            "mobile": False,
+            "isEcommerce": True
+        },
         "currency": "USD"
     }
+    
     json_str = json.dumps(payload)
     json_obj = json.loads(json_str)
     print(json_obj)

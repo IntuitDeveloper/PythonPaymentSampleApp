@@ -126,12 +126,14 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, "static"), ]
 
 # OAuth specific variables
 DISCOVERY_DOCUMENT = 'https://developer.api.intuit.com/.well-known/openid_sandbox_configuration/'
-CLIENT_ID = '<EnterYourAppsClientIdHere>'
-CLIENT_SECRET = '<EnterYourAppsClientSecretHere>'
+# Production_discovery_doc_url = 'https://developer.intuit.com/.well-known/openid_configuration/''
+CLIENT_ID = 'EnterYourAppsClientIdHere'
+CLIENT_SECRET = 'EnterYourAppsClientSecretHere'
 REDIRECT_URI = 'http://localhost:8000/sampleappoauth2/authCodeHandler'
 PAYMENTS_SCOPE = 'com.intuit.quickbooks.payment'
 OPENID_SCOPES = ['openid', 'profile', 'email', 'phone', 'address']
 GET_APP_SCOPES = ['com.intuit.quickbooks.payment', 'openid', 'profile', 'email', 'phone', 'address']
 SANDBOX_PAYMENT_BASEURL = 'https://sandbox.api.intuit.com'
+# Prod_payment_url= 'https://api.intuit.com'
 SANDBOX_PROFILE_URL = 'https://sandbox-accounts.platform.intuit.com/v1/openid_connect/userinfo'
 ID_TOKEN_ISSUER = 'https://oauth.platform.intuit.com/op/v1'
