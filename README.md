@@ -1,4 +1,4 @@
-[![Sample Banner](views/Sample.png)][ss1]
+[![Rate your Sample](views/Ratesample.png)][ss1][![Yes](views/Thumbup.png)][ss2][![No](views/Thumbdown.png)][ss3]
 
 ## OAuth 2.0 - Python 3 Sample App
 
@@ -118,4 +118,6 @@ This app stores all the tokens and user information in the session. For producti
 ### Discovery document
 The app calls the discovery API during starup and loads all the endpoint urls. For production ready app, make sure to run this API once a day to get the latest urls.
 
-[ss1]: https://help.developer.intuit.com/s/samplefeedback?cid=9010&repoName=PythonPaymentSampleApp
+[ss1]: #
+[ss2]: https://customersurveys.intuit.com/jfe/form/SV_9LWgJBcyy3NAwHc?check=Yes&checkpoint=PythonPaymentSampleApp&pageUrl=github
+[ss3]: https://customersurveys.intuit.com/jfe/form/SV_9LWgJBcyy3NAwHc?check=No&checkpoint=PythonPaymentSampleApp&pageUrl=github
